@@ -35,13 +35,21 @@ class RestoListElement extends HTMLElement {
     }
 
     render() {
-        this.innerHTML = `
-            <section class="restos" id="restos">
-                <ul class="restolist">
-                    ${this._renderItems(this._restos)}
-                </ul>
-            </section>
-        `;
+        if (Object.keys(this._restos).length !== 0) {
+            this.innerHTML = `
+                <section class="restos" id="restos">
+                    <ul class="restolist">
+                        ${this._renderItems(this._restos)}
+                    </ul>
+                </section>
+            `;
+        } else {
+            this.innerHTML = `
+                <section class="restos" id="restos">
+                    <div class="resto-not-found">Tidak ada daftar resto untuk di tampilkan.</div>
+                </section>
+            `;
+        }
     }
 };
 
