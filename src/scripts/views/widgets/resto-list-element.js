@@ -13,7 +13,7 @@ class RestoListElement extends HTMLElement {
                 itemsEl += `
                     <li>
                         <figure>
-                            <img src="${CONFIG.IMG.imgSmall(item.pictureId)}" alt="gambar-resto-${item.name}">
+                            <img class="lazyload" data-src="${CONFIG.IMG.imgSmall(item.pictureId)}" alt="gambar-resto-${item.name}">
                             <figcaption>
                                 <h3>${item.name} - ${item.city}</h3>
                             </figcaption>

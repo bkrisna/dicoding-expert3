@@ -16,6 +16,8 @@ import {
     createNavBar,
 } from './views/templates/template-creator';
 import CONFIG from './globals/config';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 const headerPlaceholder = document.querySelector('header');
 const mainPlaceholder = document.querySelector('main');
