@@ -1,0 +1,109 @@
+/* Mobile to Tablet  */
+@media (min-width: 320px) and (max-width: 767px) {
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: fixed;
+        justify-content: flex-start;
+        top: 70px;
+        background-color: #325288;
+        transform: translate(-101%);
+        text-align: center;
+        grid-gap: 0px;
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+    }
+    .navbar .logo {
+        font-size: 25px;
+        font-weight: 700;
+        margin-left: 15px;
+    }
+    .navbar li {
+        padding: 10px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar li:nth-last-of-type(1) {
+        border-bottom: none;
+    }
+
+    .nav-item > a {
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+        transition: color 0.3s ease-out;
+    }
+
+    .nav-item > a:hover {
+        color: #3498db;
+    }
+       
+    .menu-toggle, .bar {
+        display: block;
+        cursor: pointer;
+    }
+      
+    .open {
+        transform: translate(0%)!important;
+    }
+
+    .hero {
+        padding: 1rem;
+    }
+
+    .hero > h1 {
+        font-size: 3rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero > article > p {
+        font-size: 1.5rem;
+    }
+
+    .hero > article > a {
+        margin: 0;
+    }
+    
+    .restos {
+        padding: 1rem;
+    }
+
+    footer {
+        font-size: 1.05rem;
+    }
+
+    .detailresto {
+        padding: 10px 10px;
+        grid-template-columns: 1fr;
+    }
+
+    .detailresto > figure > img {
+        max-width: 300px;
+        max-height: 250px;
+        width: 100%;
+    }
+
+    .boxed_list {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .user-reviews {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    blockquote {
+        font-size: 16px;
+    }
+}
+  
+/* Tablet to Desktop */
+@media (min-width: 768px) {
+    .mobile-menu,
+    .mobile-btn {
+        display: none;
+    }
+}
