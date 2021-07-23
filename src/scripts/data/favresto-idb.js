@@ -9,6 +9,9 @@ const dbPromise = openDB(CONFIG.DB_NAME, CONFIG.DB_VER, {
 
 const FavRestoIdb = {
     async getResto(id) {
+        if (!id) {
+            return;
+        }
         return (await dbPromise).get(CONFIG.OBJ_STORE_NAME, id);
     },
 
@@ -17,6 +20,9 @@ const FavRestoIdb = {
     },
 
     async putResto(resto) {
+        if (!resto.hasOwnProperty('id')) {
+            return;
+        }
         return (await dbPromise).put(CONFIG.OBJ_STORE_NAME, resto);
     },
 
