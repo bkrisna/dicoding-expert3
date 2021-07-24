@@ -11,10 +11,10 @@ class RestoListElement extends HTMLElement {
         if (Object.keys(items).length !== 0) {
             items.forEach((item) => {
                 itemsEl += `
-                    <li>
+                    <li class='resto-item'>
                         <figure>
                             <img class="lazyload" data-src="${CONFIG.IMG.imgSmall(item.pictureId)}" alt="gambar-resto-${item.name}">
-                            <figcaption>
+                            <figcaption class='resto-title'>
                                 <h3>${item.name} - ${item.city}</h3>
                             </figcaption>
                         </figure>
@@ -46,7 +46,7 @@ class RestoListElement extends HTMLElement {
         } else {
             this.innerHTML = `
                 <section class="restos" id="restos">
-                    <div class="resto-not-found">Tidak ada daftar resto untuk di tampilkan.</div>
+                    <div class="resto-not-found">Tidak ada daftar resto untuk ditampilkan.</div>
                 </section>
             `;
         }
