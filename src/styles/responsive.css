@@ -51,6 +51,7 @@
     }
 
     .hero {
+        background: url('../public/images/heros/hero-image_2.jpg') center;
         padding: 1rem;
     }
 
