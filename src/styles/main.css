@@ -150,7 +150,7 @@ footer {
 }
 
 .hero {
-    background: url('../public/images/heros/hero-image_2.jpg') center;
+    background: url('../public/images/heros/hero-image_large.jpg') center;
     box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.5);
     background-size: cover;
     padding: 4rem 2rem;
